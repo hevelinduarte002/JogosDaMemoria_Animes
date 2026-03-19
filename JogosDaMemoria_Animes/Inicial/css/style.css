@@ -1,0 +1,249 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    height: 100%;
+    background-color: rgb(172, 197, 209);
+}
+h1{
+    
+    text-align: center;
+    letter-spacing: -5px ; 
+    margin: 0 !important  ;        /* Remove o espaço externo entre as linhas */
+    line-height: 0.8 !important;     /* "Aperta" o espaço vertical entre as palavras */
+    padding: 5px 0 !important;      /* Ajuste fino se precisar de um respiro mínimo */
+    
+    font-family:serif !important ;
+}
+.titulo-principal {
+    font-size: 55px;
+    color: #6aa25c;
+    -webkit-text-stroke: 2px rgb(255, 255, 255);
+}
+
+.titulo-secundario {
+    font-size: 40px;
+    color: rgb(22, 61, 106);
+    -webkit-text-stroke: 2px rgb(255, 255, 255);
+    text-align: center;
+    
+    margin: 3;        
+       
+    padding: 10px 0 !important;     
+    font-family:serif !important ;
+}
+
+header{
+    background-color: rgb(172, 197, 209);
+    margin: 0; /* Garante que não haja espaço fora */
+    padding: 20px 0;
+    width: 100%;
+}
+
+
+.grade-imagens {
+    flex: 1; 
+    padding: 0px;
+    
+ 
+}
+.grade-imagens img{
+    width: 139px;
+    height: auto;
+    object-fit: cover;
+    cursor: pointer;
+    filter: brightness(0.9);
+    border-radius: 8px;
+    border: 3px solid #ffffff;
+    
+}
+table{
+    margin: auto;
+}
+.container-principal {
+    display: flex;          /* Coloca a tabela e a barra lado a lado */
+    align-items: stretch;   /* Faz a barra lateral esticar até o final */
+    display: flex;
+    flex: 1; /* Faz o container ocupar todo o resto da altura */
+    background-color: rgb(0, 0, 0) !important; 
+}
+
+footer{
+    background-color:rgb(4, 1, 23);
+    margin: 0; /* Garante que não haja espaço fora */
+    padding: 10px 0px;
+    width: 100%;
+    
+}
+footer p{
+    text-align: justify;
+    text-indent: 10px;
+    color: rgb(255, 255, 255);
+    margin: 2px 0px ;
+}
+a {
+    color: white !important;
+}
+td {
+    padding: 0.5px;
+}
+.espaco{
+    width: 38px;
+}
+.linha-espaco{
+    height: 30px;
+}
+.navbar {
+    background-color: rgb(4, 1, 23); /* mesma cor do container */
+    padding: 12px 20px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: Georgia, serif;
+    font-size: 20px;
+    color: rgb(255, 255, 255) !important;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+}
+
+.nav-links li a {
+    color: rgb(255, 255, 255) !important;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #aaaaaa;
+}
+.jogos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 25px 40px 10px 40px;
+    flex: 1;
+}
+.jogos-imagem {
+    margin: 10px 40px 40px 40px; /* reduz em cima */
+}
+
+.card {
+    width: 240px;
+    height: 140px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    transition: 0.3s;
+    border: 2px solid white;
+    text-align: center;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background-color: black;
+}
+/* 🟣 HANAKO */
+.hanako {
+    background: linear-gradient(135deg, black, rgb(34, 43, 107));
+    border: 4px solid rgb(255, 255, 255);
+}
+
+.hanako:hover {
+    background: linear-gradient(135deg, #24264b, rgb(5, 5, 61));
+    transform: scale(1.05);
+}
+
+/* 🟤 MAOMAO */
+.maomao {
+    background: linear-gradient(135deg, rgb(135, 186, 119), rgb(58, 109, 43));
+    border: 4px solid rgb(255, 255, 255);
+}
+
+.maomao:hover {
+    background: linear-gradient(135deg, #d09c73bc, #ab6c3bbc);
+    transform: scale(1.05);
+}
+.anya {
+    background: linear-gradient(135deg, rgb(200, 90, 120), rgb(197, 58, 95));
+    border: 4px solid rgb(255, 255, 255);
+}
+
+.anya:hover {
+    background: linear-gradient(135deg, rgb(120, 160, 140), rgb(71, 126, 98));
+    transform: scale(1.05);
+}
+
+/* ⚪ FRIEREN */
+.frieren {
+    background: linear-gradient(135deg, #aad5e9, #165da0);
+    color: black;
+    border: 4px solid rgb(255, 255, 255);
+}
+
+.frieren:hover {
+    background: linear-gradient(135deg, #c1ebff, #4a7bd1);
+    transform: scale(1.05);
+}
+.jogos-imagem {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 40px;
+}
+
+/* CARD */
+.card-img {
+    width: 260px;
+    height: 160px;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    display: block;
+    border: 4px solid rgb(255, 255, 255);
+}
+
+/* IMAGEM */
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+/* TEXTO */
+.card-img span {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    text-align: center;
+    padding: 8px;
+    font-size: 16px;
+}
+
+/* HOVER */
+.card-img:hover img {
+    transform: scale(1.1);
+    filter: brightness(0.7);
+}
