@@ -10,6 +10,10 @@
             <div class="nav-container"> 
                 <a href="https://jogos-da-memoria-animes-3wt7.vercel.app/" class="logo">Jogos da memória</a>
                 <ul class="nav-links"> 
+                    <li class="Segredo">
+                        <a href="#" onclick="abrirPerguntas(event)"><p>Católico</p>
+                        </a>
+                    </li>
                     <li><a href="https://jogos-da-memoria-animes-3wt7.vercel.app/" class="ativo">Início</a></li>
                     <li><a href="https://jogos-da-memoria-animes-p3ok.vercel.app/">Toilet Bound Hanako-kun</a></li>
                     <li><a href="https://jogos-da-memoria-animes-eill.vercel.app/">Diários de uma apotecária</a></li>
@@ -69,6 +73,42 @@
             <p>LinkedIn: <a href="www.linkedin.com/in/hevelin-duarte-guerra-084bbb2a9">www.linkedin.com/in/hevelin-duarte-guerra-084bbb2a9</a></p> 
             <br> 
         </footer>
+        <script>
+                    function abrirPerguntas(event) {
+                        event.preventDefault();
+                        const perguntas = [
+                            { pergunta: "Qual santo é conhecido por cuidar dos animais?", resposta: 
+                            ["francisco", "sao francisco", "sao francisco de assis", "assis"] },
+                            { pergunta: "Qual santa é padroeira da música?", resposta: ["cecilia", "santa cecilia"]},
+                            { pergunta: "Qual santo é o pai adotivo de Jesus?", resposta: ["jose", "sao josé", "sao jose"]},
+                            { pergunta: "Qual santa é associada à visão?", resposta: ["luzia", "santa luzia", "lúcia", "santa lúcia"]},
+                            { pergunta: "Qual santo é amigo dos jovens?", resposta: ["bosco", "joão bosco", "dom bosco", "joao"]},
+                            { pergunta: "Quem escreveu 'Confissões?", resposta: ["agostinho", "santo agostinho"]},
+                            { pergunta: "Qual santa fundou as Clarissas?", resposta: ["clara", "santa clara"]},
+                            { pergunta: "Qual papa sucedeu o 'Papa do Sorriso'?", resposta: ["joao paulo ii", "sao joao paulo ii", "joão paulo ii"]},
+                            { pergunta: "Qual título mariano está ligado ao escapulário?", resposta: ["carmo", "nossa senhora do carmo", "nossa senhora"]},
+                            { pergunta: "Qual foi o santo que cantou 'Preferisco il Paradiso'?", resposta: ["filipe", "neri", "felipe", "sao filipe neri", "sâo filipe néri"]}
+                        ];
+                    
+                    const sorteada = perguntas[Math.floor(Math.random() * perguntas.length)];
+                    let respostaUsuario = prompt(sorteada.pergunta);
+                    if (respostaUsuario) {
+                        let resposta = respostaUsuario.toLowerCase().trim();
+                        let acertou = sorteada.resposta.some(r => resposta.includes(r));
+                        if(acertou) {
+                            alert("Correto! Entrando...");
+                            window.location.href = "https://jogo-da-memoria-dos-santos.vercel.app/";
+                        } else {
+                            alert("Resposta incorreta!");
+                            window.location.reload();
+                        }
+                     
+                    } else{
+                        alert("Você cancelou");
+                        window.location.reload();
+                    }}
+
+        </script>
     </body>  
 </html>
 
