@@ -242,6 +242,13 @@ td {
     padding: 8px;
     font-size: 16px;
 }
+.segredo{
+    color: rgb(4, 1, 23) !important ;
+}
+.segredo p{
+    color: rgb(4, 1, 23) !important ;
+    font-size: 5px;
+}
 
 /* HOVER */
 .card-img:hover img {
