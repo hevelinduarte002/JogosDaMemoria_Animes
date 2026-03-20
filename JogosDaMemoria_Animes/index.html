@@ -8,18 +8,17 @@
     <body> 
         <nav class="navbar"> 
             <div class="nav-container"> 
-                <a href="https://jogos-da-memoria-animes-3wt7.vercel.app/" class="logo">Jogos da memória</a>
-                <ul class="nav-links"> 
+                <a href="https://jogos-da-memoria-animes-3wt7.vercel.app/" class="logo">Jogos de memória</a>
+                <ul class="nav-links">
                     <li class="Segredo">
                         <a href="#" onclick="abrirPerguntas(event)"><p>Católico</p>
                         </a>
                     </li>
-                    <li><a href="https://jogos-da-memoria-animes-3wt7.vercel.app/" class="ativo">Início</a></li>
+                    <li><a href="https://jogos-da-memoria-animes-3wt7.vercel.app/">Início</a></li>
                     <li><a href="https://jogos-da-memoria-animes-p3ok.vercel.app/">Toilet Bound Hanako-kun</a></li>
                     <li><a href="https://jogos-da-memoria-animes-eill.vercel.app/">Diários de uma apotecária</a></li>
                     <li><a href="https://jogos-da-memoria-animes-7766.vercel.app/">Frieren e a jornada para o além</a></li>
-                    <li><a href="https://jogos-da-memoria-animes-so8a.vercel.app/">Spy X family</a></li> 
-
+                    <li><a href="https://jogos-da-memoria-animes-so8a.vercel.app/">Spy X Family</a></li>
                 </ul> 
             </div> 
         </nav>
@@ -27,6 +26,10 @@
             <br> 
             <h1 class="titulo-principal">Jogos da Memória</h1> 
             <h2 class="titulo-secundario">Escolha um anime e comece a jogar</h2> 
+            <li class="Segredo2">
+                <a href="#" onclick="abrirPerguntas1(event)"><p>JJBA</p>
+                </a>
+            </li>
             
         </header>
         <main class="jogos"> 
@@ -59,13 +62,11 @@
                 <img src="img/frieren.jpg" alt="Frieren">
                 <span>Frieren e a jornada para o além</span>
             </a>
-            <a href="https://jogos-da-memoria-animes-so8a.vercel.app/" class="card-img">
+            <a href="https://jogos-da-memoria-animes-so8a.vercel.app/" target="_blank" class="card-img">
                 <img src="img/Anya.jpg" alt="Anya">
                 <span>Spy X Family</span>
             </a>
-
         </section>
-
         <footer style="color: black;"> 
         <br> 
             <p>© 2026 - Hevelin Duarte </p> 
@@ -73,19 +74,19 @@
             <p>LinkedIn: <a href="www.linkedin.com/in/hevelin-duarte-guerra-084bbb2a9">www.linkedin.com/in/hevelin-duarte-guerra-084bbb2a9</a></p> 
             <br> 
         </footer>
-        <script>
+            <script>
                     function abrirPerguntas(event) {
                         event.preventDefault();
                         const perguntas = [
                             { pergunta: "Qual santo é conhecido por cuidar dos animais?", resposta: 
-                            ["francisco", "sao francisco", "sao francisco de assis", "assis", "são francisco"] },
-                            { pergunta: "Qual santa é padroeira da música?", resposta: ["cecilia", "santa cecilia", "cecília]},
-                            { pergunta: "Qual santo é o pai adotivo de Jesus?", resposta: ["jose", "sao josé", "sao jose", "José"]},
+                            ["francisco", "sao francisco", "sao francisco de assis", "assis"] },
+                            { pergunta: "Qual santa é padroeira da música?", resposta: ["cecilia", "santa cecilia"]},
+                            { pergunta: "Qual santo é o pai adotivo de Jesus?", resposta: ["jose", "sao josé", "sao jose"]},
                             { pergunta: "Qual santa é associada à visão?", resposta: ["luzia", "santa luzia", "lúcia", "santa lúcia"]},
                             { pergunta: "Qual santo é amigo dos jovens?", resposta: ["bosco", "joão bosco", "dom bosco", "joao"]},
                             { pergunta: "Quem escreveu 'Confissões?", resposta: ["agostinho", "santo agostinho"]},
                             { pergunta: "Qual santa fundou as Clarissas?", resposta: ["clara", "santa clara"]},
-                            { pergunta: "Qual papa sucedeu o 'Papa do Sorriso'?", resposta: ["joao paulo ii", "sao joao paulo ii", "joão paulo ii", "são joão paulo ii", "sao joao pauloii]},
+                            { pergunta: "Qual papa sucedeu o 'Papa do Sorriso'?", resposta: ["joao paulo ii", "sao joao paulo ii", "joão paulo ii"]},
                             { pergunta: "Qual título mariano está ligado ao escapulário?", resposta: ["carmo", "nossa senhora do carmo", "nossa senhora"]},
                             { pergunta: "Qual foi o santo que cantou 'Preferisco il Paradiso'?", resposta: ["filipe", "neri", "felipe", "sao filipe neri", "sâo filipe néri"]}
                         ];
@@ -102,6 +103,91 @@
                             alert("Resposta incorreta!");
                             window.location.reload();
                         }
+                    } else{
+                        alert("Você cancelou");
+                        window.location.reload();
+                    }}
+                    function abrirPerguntas1(event) {
+                        event.preventDefault();
+                        const questoes = [
+                            { questao: "Qual é o nome do Stand evoluído do Giorno?", resposta1: 
+                            ["golden experience requiem"] },
+                            { questao: "Qual é o nome do stand do Jotaro? ", 
+                            resposta1: ["star platinum"]},
+                            { questao: "Qual é o nome do Stand evoluído do Polnareff?", 
+                            resposta1: ["silver chariot requiem"]},
+                            { questao: "Qual é o nome do Zeppeli da parte 7?", 
+                            resposta1: ["gyro", "gyro zeppeli"]},
+                            { questao: "Qual é o nome da cidade da parte 4 de JJBA?", 
+                            resposta1: ["morioh cho", "morioh"]},
+                            { questao: "Quem é a 'mãe' da parte 5 de JJBA?", 
+                            resposta1: ["bruno", "bucciarati", "bruno bucciarati"]},
+                            { questao: "De qual número o Mista mais 'gosta' (Ironia)?", 
+                            resposta1: ["4", "quatro"]},
+                            { questao: "Qual foi o meio inesperado que levou à derrota do vilão da Parte 4", 
+                            resposta1: ["ambulancia", "ambulância"]},
+                            { questao: "Qual personagem aparece nas Partes 1 e 3 e influencia ou é mencionado em várias outras partes?", resposta1: ["dio", "diooooo", "dio brando"]},
+                            { questao: "Qual JoJo é conhecido por ser o mais cavalheiro e gentil comparando com os outros JoJo's?", 
+                            resposta1: ["jonathan", "jonathan joestar"]},
+                            { questao: "Qual personagem virou chefe da máfia aos 15 anos?", 
+                            resposta1: ["giorno", "giorno giovanna"]},
+                            { questao: "Qual personagem derrotou um ser supremo?", 
+                            resposta1: ["joseph", "joseph joestar"]},
+                            { questao: "Qual é o nome da criança da parte 6? ", 
+                            resposta1: ["emporio", "emporio alnino"]},
+                            { 
+                            questao: "Qual Stand da Parte 3 é considerado fraco pelo próprio usuário, mas se torna mortal por atacar de dentro?", 
+                            resposta1: ["the lovers", "lovers", "amantes", "os amantes"]},
+                            { questao: "Qual é o personagem favorito do Araki que aparece na Parte 4, tem histórias próprias e reaparece futuramente na obra?", 
+                            resposta1: ["rohan", "rohan kishibe", "kishibe rohan"]},
+                            { questao: "Qual personagem enfrentou um bebê usuário de Stand?", 
+                            resposta1: ["kakyoin", "noriaki kakyoin"]},
+                            { questao: "Qual personagem brinca de aviãozinho até depois de mais velho?", 
+                            resposta1: ["narancia", "narancia ghirga"]},
+                            { questao: "Quais JoJo's reaparecem como suas formas alternativas mesmo após suas histórias?", 
+                            resposta1: ["jonathan, josuke, giorno",
+                                                    "jonathan joestar, josuke higashikata, giorno giovanna",
+                                                    "jonathan, josuke higashikata, giorno",
+                                                    "jonathan joestar, josuke, giorno",
+                                                    "jonathan, josuke",
+                                                    "jotaro, jolyne",
+                                                    "jolyne, jotaro",
+                                                    "jolyne kujo, jotaro kujo",
+                                                    "jotaro, jolyne, jonathan, josuke",
+                                                    "jotaro, jolyne, jonathan, josuke, giorno",
+                                                    "jonathan, jotaro, josuke, giorno, jolyne"]
+                            },
+                            { questao: "Qual é o nome do 'dinossauro' em JoJo?", 
+                            resposta1: [
+                                                    "diego",
+                                                    "diego brando",
+                                                    "dio",
+                                                    "dio brando",
+                                                    "dio parte 7",
+                                                    "diego brando parte 7"]
+                            }, 
+                            { questao: "Quais personagens de JoJo têm natureza diferente dos usuários de Stand comuns, mesmo possuindo habilidades semelhantes?", 
+                            resposta1: [
+                                                    "mikitaka, ff",
+                                                    "mikitaka hazekura, foo fighters",
+                                                    "alienigena, ff",
+                                                    "mikitaka, foo fighters"]
+                            }
+                        ];
+                    // resposta.normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+                    const sorteada2 = questoes[Math.floor(Math.random() * questoes.length)];
+                    let resposta1Usuario = prompt(sorteada2.questao);
+                    if (resposta1Usuario) {
+                        let resposta1 = resposta1Usuario.toLowerCase().trim();
+                        let acertou = sorteada2.resposta1.some(r => resposta1.includes(r));
+                        if(acertou) {
+                            
+                            alert("Correto! Você descobriu meu antigo anime favorito! Entrando...");
+                            window.location.href = "https://jjba-pi.vercel.app/";
+                        } else {
+                            alert("Resposta incorreta!");
+                            window.location.reload();
+                        }
                      
                     } else{
                         alert("Você cancelou");
@@ -111,5 +197,6 @@
         </script>
     </body>  
 </html>
+
 
                     
