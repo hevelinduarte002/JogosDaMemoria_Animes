@@ -254,5 +254,12 @@ td {
 }
 .segredo p{
     color: rgb(4, 1, 23) !important ;
-    font-size: 4px;
+    font-size: 5px;
+}
+.segredo2{
+    color: rgb(172, 197, 209) !important ;
+}
+.segredo2 p{
+    color: rgb(172, 197, 209) !important ;
+    font-size: 2px;
 }
