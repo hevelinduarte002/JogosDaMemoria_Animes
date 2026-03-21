@@ -19,7 +19,9 @@
                     <li><a href="https://jogos-da-memoria-animes-eill.vercel.app/">Diários de uma apotecária</a></li>
                     <li><a href="https://jogos-da-memoria-animes-7766.vercel.app/">Frieren e a jornada para o além</a></li>
                     <li><a href="https://jogos-da-memoria-animes-so8a.vercel.app/">Spy X Family</a></li>
+                    
                 </ul> 
+                
             </div> 
         </nav>
         <header> 
@@ -66,7 +68,9 @@
                 <img src="img/Anya.jpg" alt="Anya">
                 <span>Spy X Family</span>
             </a>
+
         </section>
+
         <footer style="color: black;"> 
         <br> 
             <p>© 2026 - Hevelin Duarte </p> 
@@ -74,126 +78,158 @@
             <p>LinkedIn: <a href="www.linkedin.com/in/hevelin-duarte-guerra-084bbb2a9">www.linkedin.com/in/hevelin-duarte-guerra-084bbb2a9</a></p> 
             <br> 
         </footer>
-            <script>
-                    function abrirPerguntas(event) {
-                        event.preventDefault();
-                        const perguntas = [
-                            { pergunta: "Qual santo é conhecido por cuidar dos animais?", resposta: 
-                            ["francisco", "sao francisco", "sao francisco de assis", "assis"] },
-                            { pergunta: "Qual santa é padroeira da música?", resposta: ["cecilia", "santa cecilia"]},
-                            { pergunta: "Qual santo é o pai adotivo de Jesus?", resposta: ["jose", "sao josé", "sao jose"]},
-                            { pergunta: "Qual santa é associada à visão?", resposta: ["luzia", "santa luzia", "lúcia", "santa lúcia"]},
-                            { pergunta: "Qual santo é amigo dos jovens?", resposta: ["bosco", "joão bosco", "dom bosco", "joao"]},
-                            { pergunta: "Quem escreveu 'Confissões?", resposta: ["agostinho", "santo agostinho"]},
-                            { pergunta: "Qual santa fundou as Clarissas?", resposta: ["clara", "santa clara"]},
-                            { pergunta: "Qual papa sucedeu o 'Papa do Sorriso'?", resposta: ["joao paulo ii", "sao joao paulo ii", "joão paulo ii"]},
-                            { pergunta: "Qual título mariano está ligado ao escapulário?", resposta: ["carmo", "nossa senhora do carmo", "nossa senhora"]},
-                            { pergunta: "Qual foi o santo que cantou 'Preferisco il Paradiso'?", resposta: ["filipe", "neri", "felipe", "sao filipe neri", "sâo filipe néri"]}
-                        ];
+        <script>
+            function abrirPerguntas(event) {
+                event.preventDefault();
+                const perguntas = [
+                    { pergunta: "Qual santo é conhecido por cuidar dos animais?", resposta: 
+                    ["francisco", "sao francisco", "sao francisco de assis", "assis"] },
+                    { pergunta: "Qual santa é padroeira da música?", resposta: ["cecilia", "santa cecilia"]},
+                    { pergunta: "Qual santo é o pai adotivo de Jesus?", resposta: ["jose", "sao josé", "sao jose"]},
+                    { pergunta: "Qual santa é associada à visão?", resposta: ["luzia", "santa luzia", "lúcia", "santa lúcia"]},
+                    { pergunta: "Qual santo é amigo dos jovens?", resposta: ["bosco", "joão bosco", "dom bosco", "joao"]},
+                    { pergunta: "Quem escreveu 'Confissões?", resposta: ["agostinho", "santo agostinho"]},
+                    { pergunta: "Qual santa fundou as Clarissas?", resposta: ["clara", "santa clara"]},
+                    { pergunta: "Qual papa sucedeu o 'Papa do Sorriso'?", resposta: ["joao paulo ii", "sao joao paulo ii", "joão paulo ii"]},
+                    { pergunta: "Qual título mariano está ligado ao escapulário?", resposta: ["carmo", "nossa senhora do carmo", "nossa senhora"]},
+                    { pergunta: "Qual foi o santo que cantou 'Preferisco il Paradiso'?", resposta: ["filipe", "neri", "felipe", "sao filipe neri", "sâo filipe néri"]}
+                ];
                     
-                    const sorteada = perguntas[Math.floor(Math.random() * perguntas.length)];
-                    let respostaUsuario = prompt(sorteada.pergunta);
-                    if (respostaUsuario) {
-                        let resposta = respostaUsuario.toLowerCase().trim();
-                        let acertou = sorteada.resposta.some(r => resposta.includes(r));
-                        if(acertou) {
-                            alert("Correto! Entrando...");
-                            window.location.href = "https://jogo-da-memoria-dos-santos.vercel.app/";
-                        } else {
-                            alert("Resposta incorreta!");
-                            window.location.reload();
-                        }
-                    } else{
-                        alert("Você cancelou");
-                        window.location.reload();
-                    }}
-                    function abrirPerguntas1(event) {
-                        event.preventDefault();
-                        const questoes = [
-                            { questao: "Qual é o nome do Stand evoluído do Giorno?", resposta1: 
-                            ["golden experience requiem"] },
-                            { questao: "Qual é o nome do stand do Jotaro? ", 
-                            resposta1: ["star platinum"]},
-                            { questao: "Qual é o nome do Stand evoluído do Polnareff?", 
-                            resposta1: ["silver chariot requiem"]},
-                            { questao: "Qual é o nome do Zeppeli da parte 7?", 
-                            resposta1: ["gyro", "gyro zeppeli"]},
-                            { questao: "Qual é o nome da cidade da parte 4 de JJBA?", 
-                            resposta1: ["morioh cho", "morioh"]},
-                            { questao: "Quem é a 'mãe' da parte 5 de JJBA?", 
-                            resposta1: ["bruno", "bucciarati", "bruno bucciarati"]},
-                            { questao: "De qual número o Mista mais 'gosta' (Ironia)?", 
-                            resposta1: ["4", "quatro"]},
-                            { questao: "Qual foi o meio inesperado que levou à derrota do vilão da Parte 4", 
-                            resposta1: ["ambulancia", "ambulância"]},
-                            { questao: "Qual personagem aparece nas Partes 1 e 3 e influencia ou é mencionado em várias outras partes?", resposta1: ["dio", "diooooo", "dio brando"]},
-                            { questao: "Qual JoJo é conhecido por ser o mais cavalheiro e gentil comparando com os outros JoJo's?", 
-                            resposta1: ["jonathan", "jonathan joestar"]},
-                            { questao: "Qual personagem virou chefe da máfia aos 15 anos?", 
-                            resposta1: ["giorno", "giorno giovanna"]},
-                            { questao: "Qual personagem derrotou um ser supremo?", 
-                            resposta1: ["joseph", "joseph joestar"]},
-                            { questao: "Qual é o nome da criança da parte 6? ", 
-                            resposta1: ["emporio", "emporio alnino"]},
-                            { 
-                            questao: "Qual Stand da Parte 3 é considerado fraco pelo próprio usuário, mas se torna mortal por atacar de dentro?", 
-                            resposta1: ["the lovers", "lovers", "amantes", "os amantes"]},
-                            { questao: "Qual é o personagem favorito do Araki que aparece na Parte 4, tem histórias próprias e reaparece futuramente na obra?", 
-                            resposta1: ["rohan", "rohan kishibe", "kishibe rohan"]},
-                            { questao: "Qual personagem enfrentou um bebê usuário de Stand?", 
-                            resposta1: ["kakyoin", "noriaki kakyoin"]},
-                            { questao: "Qual personagem brinca de aviãozinho até depois de mais velho?", 
-                            resposta1: ["narancia", "narancia ghirga"]},
-                            { questao: "Quais JoJo's reaparecem como suas formas alternativas mesmo após suas histórias?", 
-                            resposta1: ["jonathan, josuke, giorno",
-                                                    "jonathan joestar, josuke higashikata, giorno giovanna",
-                                                    "jonathan, josuke higashikata, giorno",
-                                                    "jonathan joestar, josuke, giorno",
-                                                    "jonathan, josuke",
-                                                    "jotaro, jolyne",
-                                                    "jolyne, jotaro",
-                                                    "jolyne kujo, jotaro kujo",
-                                                    "jotaro, jolyne, jonathan, josuke",
-                                                    "jotaro, jolyne, jonathan, josuke, giorno",
-                                                    "jonathan, jotaro, josuke, giorno, jolyne"]
-                            },
-                            { questao: "Qual é o nome do 'dinossauro' em JoJo?", 
-                            resposta1: [
-                                                    "diego",
-                                                    "diego brando",
-                                                    "dio",
-                                                    "dio brando",
-                                                    "dio parte 7",
-                                                    "diego brando parte 7"]
-                            }, 
-                            { questao: "Quais personagens de JoJo têm natureza diferente dos usuários de Stand comuns, mesmo possuindo habilidades semelhantes?", 
-                            resposta1: [
-                                                    "mikitaka, ff",
-                                                    "mikitaka hazekura, foo fighters",
-                                                    "alienigena, ff",
-                                                    "mikitaka, foo fighters"]
-                            }
-                        ];
-                    // resposta.normalize("NFD").replace(/[\u0300-\u036f]/g, "")
-                    const sorteada2 = questoes[Math.floor(Math.random() * questoes.length)];
-                    let resposta1Usuario = prompt(sorteada2.questao);
-                    if (resposta1Usuario) {
-                        let resposta1 = resposta1Usuario.toLowerCase().trim();
-                        let acertou = sorteada2.resposta1.some(r => resposta1.includes(r));
-                        if(acertou) {
-                            
-                            alert("Correto! Você descobriu meu antigo anime favorito! Entrando...");
-                            window.location.href = "https://jjba-pi.vercel.app/";
-                        } else {
-                            alert("Resposta incorreta!");
-                            window.location.reload();
-                        }
-                     
-                    } else{
-                        alert("Você cancelou");
-                        window.location.reload();
-                    }}
+                let perguntasRestantes = [...questoes];
+                const sorteada2 = pegarPergunta();
 
+                function pegarPergunta() {
+                    if (perguntasRestantes.length === 0) {
+                        perguntasRestantes = [...questoes]; // reinicia quando acabar
+                    }
+                    const index = Math.floor(Math.random() * perguntasRestantes.length);
+                    const pergunta = perguntasRestantes[index];
+                    perguntasRestantes.splice(index, 1); // remove a pergunta usada
+                    return pergunta;
+                }
+                let respostaUsuario = prompt(sorteada.pergunta);
+                if (respostaUsuario) {
+                    let resposta = respostaUsuario.toLowerCase().trim();
+                    let acertou = sorteada.resposta.some(r => resposta.includes(r));
+                    if(acertou) {
+                        alert("Correto! Entrando...");
+                        window.location.href = "https://jogo-da-memoria-dos-santos.vercel.app/";
+                    } else {
+                        alert("Resposta incorreta!");
+                        window.location.reload();}
+                } else{
+                    alert("Você cancelou");
+                    window.location.reload();
+                }}
+            
+            function abrirPerguntas1(event) {
+                event.preventDefault();
+                const faceis = [
+                    /*1*/{q: "Qual é o nome do Stand do Jotaro? ", r: ["star platinum"]},
+                    /*2*/{q: "Qual JoJo é conhecido por ser o mais cavalheiro? ", r: ["jonathan", "jonathan joestar"]},
+                    /*3*/{q: "Qual JoJo virou chefe da máfia aos 15 anos?", r: ["giorno giovanna", "giorno"]},
+                    /*4*/{q: "Qual personagem derrotou um ser supremo? ", r: ["joseph", "joseph joestar"]},
+                    /*5*/{q: "Qual foi a parte que teve uma cena 'escondida' pela primeira vez na abertura?", r: ["parte 3", "stardust crusaders"]},
+                    /*6*/{q: "Em qual parte de JJBA os personagens se despedem dando joinha?", r: ["diamond is unbreakable", "parte 4"]}
+                ]
+                const medias = [
+                    /*7*/{q: "Qual personagem conversa com um sapo?", r: ["doppio"]},
+                    /*8*/{q: "Qual é o nome da cidade da parte 7 de JJBA?", r: ["morioh cho", "morioh"]},
+                    /*9*/{q: "Quem é a 'mãe' da parte 5 de JJBA?", r: ["bruno", "bucciarati", "bruno bucciarati"]},
+                    /*10*/{q: "De qual número o Mista mais 'gosta'? (Ironia)?", r:["4", "quatro"]},
+                    /*11*/{q: "Qual foi o meio inesperado que levou à derrota do vilão da Parte 4?", r: ["ambulância", "ambulancia"]},
+                    /*12*/{q: "Qual Stand da parte 3 é considerado fraco pelo próprio usuário, mas se torna morta por atacar de dentro?", r: ["lovers", "the lovers", "os amantes", "amantes"]},
+                    /*13*/{q: "Qual personagem enfrentou um bebê usuário de Stand? ", r: ["kakyoin", "noriaki kakyoin", "noriaki"] },
+                    /*14*/{q: "Qual personagem brinca de aviãozinho até depois de mais velho?", r: ["narancia", "narancia ghirga"]},
+                    /*15*/{q: "Qual é o nome do Zeppeli da parte 7?", r: ["gyro", "gyro zeppeli"]},
+                ]
+                const dificeis = [
+                    /*16*/{q: "Qual é o nome do Stand evoluído do Giorno?", r: ["golden experience requiem", "ger"]},
+                    /*17{q: "Qual é o nome da abertura da parte 4 que o Kira reverte o tempo? Ou o número do episódio", r: ["great days", "36"]},*/
+                    /*18*/{q: "Qual é o nome do Stand evoluído do Polnareff?", r: ["silver chariot requim", "scr"]},
+                    /*19*/{q: "Qual é o personagem que aparece nas partes 1 e 3, sendo mencionado em quase todas as outras partes, e aparecendo de forma alternativa na parte 7?", r: ["dio", "dio brando", "dioooo"]},
+                    /*20*/{q: "Qual é o nome da criança da parte 6? ", r: ["emporio", "emporio alnino"]},
+                ]
+
+                const muitoDificeis = [
+                    /*21*/{q: "Em qual episódio ocorre a cena simbólica onde personagens falecidos de Morioh aparecem dando joinha?", r: ["39", "episodio 39", "ultimo episodio", "episodio final", "episódio final", "último episódio"]},
+                    /*22*/{q: "Qual é o personagem favorito do Araki que aparece na Parte 4, tem um anime próprio e reaparece na parte 9?", r: ["rohan", "rohan kishibe", "kishibe rohan"]},
+                    /*23*/{q: "Quais JoJo's reaparecem como suas formas alternativas mesmo após suas histórias? (Diga pelo menos 2)", r: ["jonathan, josuke, giorno", "jonathan joestar, josuke higashikata, giorno giovanna", "jonathan, josuke higashikata, giorno", "jonathan joestar, josuke, giorno", "jonathan, josuke",]},
+                    /*24*/{q: "Qual é o nome do 'dinossauro' em JoJo?", r: ["diego", "diego brando","dio","dio parte 7", "diego brando parte 7"]}, 
+                    /*25*/{ q: "Quais personagens de JoJo têm natureza diferente dos usuários de Stand comuns, mesmo possuindo habilidades semelhantes?", r: ["mikitaka, ff", "mikitaka hazekura, foo fighters", "alienigena, ff", "mikitaka, foo fighters", "ff, alienigena"]},
+                    /*26*/{q: "Qual é o nome da abertura da parte 4 que o Kira reverte o tempo? Ou o número do episódio", r: ["great days", "36"]},
+
+                ]
+                let quantidadePerguntas = 3;
+                function primeiraPergunta() {
+                    let pergunta_01 = prompt("Você gosta de JoJo's Bizarre Adventure? (sim/nao)").toLowerCase().trim();
+                    if (["nao", "não"].includes(pergunta_01)) 
+                        {alert("Então tchau!"); window.location.reload(); return false;}
+                    let pergunta_02 = prompt("Você é fã de JJBA? (sim/nao)").toLowerCase().trim();
+                    if (pergunta_02 === "sim") 
+                        {quantidadePerguntas = 10; alert("Então responderá mais questões difíceis! Prepare-se!");
+                    }
+                    return true; }
+                    if (!primeiraPergunta()) return;
+                    let todas = [...faceis, ...medias, ...dificeis, ...muitoDificeis];
+                    let acertos = 0;
+                    for (let i = 0; i < quantidadePerguntas; i++) {
+                        let perguntaAtual = todas[Math.floor(Math.random() * todas.length)];
+                        let respostaUsuario = prompt(perguntaAtual.q);
+                        if (!respostaUsuario) {
+                            alert("Você cancelou");
+                            return;
+                        }
+                        let respostaFormatada = respostaUsuario.toLowerCase().trim();
+                        let acertou = perguntaAtual.r.some(r => respostaFormatada.includes(r));
+                        if (acertou) {
+                            alert("A resposta está....!");
+                            alert("E..xata!");
+                            acertos++;
+                        } else {
+                            alert("A resposta está....!");
+                            alert("E..rrada!");
+                            return;
+                        }
+                    }
+
+                    alert("Você descobriu meu antigo anime favorito!")
+                    alert("E provou que é digno! Entrando...");
+                    desafio();
+                    function desafio(){
+                        let escolha = prompt("Prefere entrar ou realizar mais um desafio?(desafio/entrar)" )
+                        if (escolha === "desafio") {
+                            let quantidadePerguntas = 20;
+                            let todas = [...faceis, ...medias, ...dificeis, ...muitoDificeis];
+                            let acertos = 0;
+
+                            for (let i = todas.length - 1; i > 0; i--) {
+                                let j = Math.floor(Math.random() * (i + 1));
+                                [todas[i], todas[j]] = [todas[j], todas[i]];
+                            
+                            for (let i = 0; i < quantidadePerguntas; i++) {
+                                let perguntaAtual = todas[i];
+                                let respostaUsuario = prompt(perguntaAtual.q);
+                                if (!respostaUsuario) {
+                                    alert("Você cancelou");
+                                    return;}
+                                let respostaFormatada = respostaUsuario.toLowerCase().trim();
+                                let acertou = perguntaAtual.r.some(r => respostaFormatada.includes(r));
+                                if (acertou) {
+                                    alert("A resposta está....!");
+                                    alert("E..xata!");
+                                    acertos++;
+                                }else {
+                                    alert("A resposta está....!");
+                                    alert("E..rrada!");
+                                return;}}
+
+                            }alert("Provou que é MUITO digno! Entrando...");
+                            window.location.href = "https://jojo-gray.vercel.app/"
+                        }else{
+                            window.location.href = "https://jjba-pi.vercel.app/"}  
+                        }  
+                    }
         </script>
     </body>  
 </html>
